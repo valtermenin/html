@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens em HTML%</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <h2>Vamos aprender a abrir imagens adptadas à vários dispositivos</h2>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexível">
+    </picture>    
+    
+    <h1>Reproduzir audios em HTML5</h1>
+    <!--1 maneira mp3 wav ogg
+    <audio src="media/like.mp3" controls autoplay></audio> -->
+    
+    <!--2 maneira-->
+    <audio preload="metadata" autoplay controls loop >
+        <source src="media/ringside.mp3" type="audio/mpeg">
+    </audio> 
+
+    
+</body>
+</html>
